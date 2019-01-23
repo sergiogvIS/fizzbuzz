@@ -35,4 +35,8 @@ public class Fizzbuzz_ {
     public void given_6_should_return_Fizz() {
         assertThat(f.get(6)).isEqualTo("Fizz");
     }
+    @Test
+    public void given_15_should_return_FizzBuzz() {
+        assertThat(f.get(15)).isEqualTo("FizzBuzz");
+    }
 }

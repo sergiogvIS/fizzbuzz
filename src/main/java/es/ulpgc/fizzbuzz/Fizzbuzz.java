@@ -6,9 +6,19 @@ public class Fizzbuzz {
     }
 
     public String get(int i) {
-        if(isMultipleOfThree(i)) return "Fizz";
-        if(isMultipleOfFive(i)) return "Buzz";
-        return Integer.toString(i);
+        return fizzbuzz(i).isEmpty() ? Integer.toString(i) : fizzbuzz(i);
+    }
+
+    private String fizzbuzz(int i) {
+        return fizz(i) + buzz(i);
+    }
+
+    private String fizz(int i) {
+        return isMultipleOfThree(i) ? "Fizz" : "";
+    }
+
+    private String buzz(int i) {
+        return isMultipleOfFive(i) ? "Buzz" : "";
     }
 
     private boolean isMultipleOfFive(int i) {
