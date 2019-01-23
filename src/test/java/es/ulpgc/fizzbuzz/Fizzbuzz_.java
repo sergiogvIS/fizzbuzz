@@ -39,4 +39,5 @@ public class Fizzbuzz_ {
     public void given_15_should_return_FizzBuzz() {
         assertThat(f.get(15)).isEqualTo("FizzBuzz");
     }
+    
 }
